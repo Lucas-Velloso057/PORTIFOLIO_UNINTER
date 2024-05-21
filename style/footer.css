@@ -1,0 +1,106 @@
+.footer {
+  background-color: #000000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-contato li a {
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-size: 1.5rem;
+  color: #8f8f8f;
+  grid-column: 1 /-1;
+}
+
+.form{
+  background-color: white;
+  border-radius: 5px;
+  grid-column: 1;
+  font-size: 2.25rem;
+}
+
+.form div, button{
+  margin: 20px;
+}
+
+.form div{
+  display: flex;
+  flex-direction: column;
+  padding:5px;
+}
+
+.form div label{
+  padding-bottom: 5px;
+}
+
+.form input{
+  padding:10px
+}
+
+.form .botao{
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(180deg, #B6F829 0%, #67DD0A 100%) no-repeat center;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  text-transform: uppercase;
+  color: var(--cor-p5);
+  font: 600 1.125rem/1.35 Poppins,sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.form .botao:hover{
+  background: linear-gradient(180deg, #93CA1F 0%, #51AE08 100%) no-repeat center;
+
+}
+
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-texto {
+    font-size: 0.8rem;
+  }
+  .footer-contato li {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .footer-copy {
+    font-size: 0.6rem;
+  }
+}
